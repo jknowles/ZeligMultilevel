@@ -1,34 +1,23 @@
 Package: ZeligMultilevel
-Maintainer: James Honaker <zelig-zee@iq.harvard.edu>
+Maintainer: TBD <zelig-zee@iq.harvard.edu>
 License: GPL (>=2)
 Title: Multilevel Regressions for Zelig
-Author: Matthew Owen, Ferdinand Alimadhi, Delia Bailey
+Author: Christine Choirat
 Description: Add-on package for Zelig. Enables the use of multilevel (mixed-effect) models.
-Version: 0.7-2
-URL: http://projects.iq.harvard.edu/zelig
-Date: 2013-09-12
+Version: 0.7-4
+URL: http://zeligproject.org/, https://github.com/IQSS/ZeligMultilevel
+Date: 2016-08-23
 Depends:
-    Zelig (>= 4.0-11),
+    arm,
+    Zelig (>= 5.0-10),
+    dplyr,
     lme4
 Collate:
-    'compute.mixed.terms.R'
-    'describes.R'
-    'model.frame.lmer.R'
-    'param.gamma.mixed.R'
-    'param.logit.mixed.R'
-    'param.ls.mixed.R'
-    'param.poisson.mixed.R'
-    'param.probit.mixed.R'
-    'qi.gamma.mixed.R'
-    'qi.logit.mixed.R'
-    'qi.ls.mixed.R'
-    'qi.poisson.mixed.R'
-    'qi.probit.mixed.R'
-    'setup.x.matrix.R'
-    'zelig2gamma.mixed.R'
-    'zelig2logit.mixed.R'
-    'zelig2ls.mixed.R'
-    'zelig2poisson.mixed.R'
-    'zelig2probit.mixed.R'
-    'ZeligMixed-package.R'
-    'common-methods.R'
+    "model-mixed.R"
+    "model-gamma-mixed.R"
+    "model-ls-mixed.R"
+    "model-poisson-mixed.R"
+    "model-logit-mixed.R"
+    "model-probit-mixed.R"
+    "create-json.R"
+
